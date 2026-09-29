@@ -14,7 +14,13 @@ This repository now uses a simple three-lane workflow so feature work can happen
   - `feature/<issue-number>-short-description`
   - `fix/<issue-number>-short-description`
   - `chore/<short-description>`
-  - `codex/<short-description>` for Codex work that is not tied to an issue number
+- Prefix every task branch for work done by ChatGPT or Codex with `codex/` to distinguish AI work from the owner's work, whether or not an issue is attached:
+  - `codex/feature/<issue-number>-short-description`
+  - `codex/fix/<issue-number>-short-description`
+  - `codex/chore/<short-description>`
+  - `codex/<short-description>` for work without a more specific type
+- For example, transcription work for issue #100 uses `codex/feature/100-dotnet-transcription-service`.
+- Apply the same prefix to AI-authored hotfix branches (`codex/hotfix/<issue-number>-short-description`); their base remains `master` as described below.
 
 ## Rules
 
